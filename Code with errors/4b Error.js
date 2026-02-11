@@ -10,9 +10,13 @@ function displayStudentGrades() {
     };
     
     console.log("Student Grades:");
-    // ERROR: Using 'student' in console.log but loop variable is 'name'
+
+    students.forEach(item => { 
+        console.log(item);
+    });
+
     for (let name in students) {
-        console.log(`${student}: ${students[name]}`);
+        console.log(`${student}: ${students[name]}`); 
     }
 }
 
