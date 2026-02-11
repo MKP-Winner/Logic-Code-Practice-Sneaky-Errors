@@ -3,10 +3,10 @@
 function displayStudentGrades() {
     const students = {
         "Mithun": 95,
-        "Elnatan": 87,
+        "Elnatan": 94,
         "Mr. Gardner": 92,
-        "Kshetra": 88,
-        "Alex": 91
+        "Kshetra": 99,
+        "Alex": 89
     };
     
     console.log("Student Grades:");

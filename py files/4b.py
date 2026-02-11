@@ -3,10 +3,10 @@
 def display_student_grades():
     students = {
         "Mithun": 95,
-        "Elnatan": 87,
+        "Elnatan": 94,
         "Mr. Gardner": 92,
-        "Kshetra": 88,
-        "Alex": 91
+        "Kshetra": 99,
+        "Alex": 89
     }
     
     print("Student Grades:")
