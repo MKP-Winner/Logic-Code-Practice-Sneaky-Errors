@@ -1,7 +1,7 @@
 // 3c: Write a function in JS that accepts a string and returns the number of vowels in the string
 
 function countVowels(text) {
-    const vowels = "aeiaoAEIAO";
+    const vowels = "aeiou";  // Logical error: uppercase not included
     let count = 0; 
 
     for (let char of text) {
@@ -14,7 +14,6 @@ function countVowels(text) {
 }
 
 const userInput = prompt("Enter a string:");
-
 const vowelCount = countVowels(userInput);
 
-console.log(result);
+console.log("Number of vowels:", vowelCount);

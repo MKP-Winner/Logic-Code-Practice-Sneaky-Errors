@@ -11,12 +11,8 @@ function displayStudentGrades() {
     
     console.log("Student Grades:");
 
-    students.forEach(item => { 
-        console.log(item);
-    });
-
     for (let name in students) {
-        console.log(`${student}: ${students[name]}`); 
+        console.log(name);  // Logical error: grade not displayed
     }
 }
 
