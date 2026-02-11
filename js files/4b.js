@@ -10,8 +10,13 @@ function displayStudentGrades() {
     };
     
     console.log("Student Grades:");
+
+    students.forEach(item => { 
+        console.log(item);
+    });
+
     for (let name in students) {
-        console.log(`${name}: ${students[name]}`);
+        console.log(`${student}: ${students[name]}`); 
     }
 }
 
