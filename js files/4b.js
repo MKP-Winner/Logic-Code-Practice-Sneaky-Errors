@@ -1,1 +1,18 @@
-// b. Write a program in Python that stores student names and their grades in a dictionary, and prints each student's name and grade.
+// 4b. Write a program in JS that stores student names and their grades in a dictionary, and prints each student's name and grade.
+
+function displayStudentGrades() {
+    const students = {
+        "Mithun": 95,
+        "Elnatan": 87,
+        "Mr. Gardner": 92,
+        "Kshetra": 88,
+        "Alex": 91
+    };
+    
+    console.log("Student Grades:");
+    for (let name in students) {
+        console.log(`${name}: ${students[name]}`);
+    }
+}
+
+displayStudentGrades();
