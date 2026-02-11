@@ -8,14 +8,12 @@ function isEvenOrOdd(number) {
     }
 }
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+const input = prompt("Enter a number:");
+const num = parseInt(input);
 
-readline.question('Enter a number: ', (input) => {
-    const num = parseInt(input);
+if (isNaN(num)) {
+    console.log("Please enter a valid number.");
+} else {
     const result = isEvenOrOdd(num);
     console.log(`${num} is ${result}`);
-    readline.close();
-});
+}

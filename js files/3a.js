@@ -4,12 +4,10 @@ function greetUser(name) {
     console.log(`Hello, ${name}! Welcome!`);
 }
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+const name = prompt("Enter your name:");
 
-readline.question('Enter your name: ', (name) => {
+if (name) {
     greetUser(name);
-    readline.close();
-});
+} else {
+    console.log("No name entered.");
+}

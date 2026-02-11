@@ -3,23 +3,19 @@
 function countVowels(text) {
     const vowels = "aeiouAEIOU";
     let count = 0;
-    
+
     for (let char of text) {
         if (vowels.includes(char)) {
             count++;
         }
     }
-    
+
     return count;
 }
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+const userInput = prompt("Enter a string:");
 
-readline.question('Enter a string: ', (userInput) => {
+if (userInput !== null) {
     const vowelCount = countVowels(userInput);
-    console.log(`The string '${userInput}' contains ${vowelCount} vowels`);
-    readline.close();
-});
+    console.log(`The string "${userInput}" contains ${vowelCount} vowels.`);
+}
